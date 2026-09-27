@@ -1,92 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-  <!-- SEO -->
-  <title>Happy Birthday Gowri ❤️ | A Surprise From Siva</title>
+<title>Happy Birthday Gowri ❤️ | A Surprise From Siva</title>
 
-  <meta
-    name="description"
-    content="A special birthday surprise made with love for Gowri ❤️ Happy Birthday, my love! — Siva"
-  >
+<meta name="description"
+      content="A special birthday surprise made with love for Gowri ❤️ Happy Birthday, my love! — Siva">
 
-  <meta
-    name="keywords"
-    content="Happy Birthday Gowri, Gowri Birthday, Birthday Surprise, Love, Siva and Gowri"
-  >
+<meta name="keywords"
+      content="Happy Birthday Gowri, Gowri Birthday, Birthday Surprise, Love, Siva and Gowri">
 
-  <meta name="author" content="Siva">
+<meta name="author" content="Siva">
+<meta name="robots" content="index, follow">
 
-  <meta name="robots" content="index, follow">
+<link rel="canonical"
+      href="https://sivasankarroyal.github.io/gowri-birthday/">
 
-  <!-- Canonical URL -->
-  <link
-    rel="canonical"
-    href="https://sivasankarroyal.github.io/gowri-birthday/"
-  >
+<meta property="og:type" content="website">
+<meta property="og:title" content="Happy Birthday Gowri ❤️">
+<meta property="og:description"
+      content="Gowri, I made something special for you. Open this surprise when the time is right. ❤️🎂">
+<meta property="og:url"
+      content="https://sivasankarroyal.github.io/gowri-birthday/">
+<meta property="og:site_name"
+      content="Gowri's Birthday Surprise">
+<meta property="og:image"
+      content="https://sivasankarroyal.github.io/gowri-birthday/preview.jpg">
+<meta property="og:image:alt"
+      content="Happy Birthday Gowri ❤️">
 
-  <!-- Open Graph / WhatsApp / Facebook / Telegram -->
-  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Happy Birthday Gowri ❤️">
+<meta name="twitter:description"
+      content="A special birthday surprise made with love by Siva ❤️">
+<meta name="twitter:image"
+      content="https://sivasankarroyal.github.io/gowri-birthday/preview.jpg">
 
-  <meta
-    property="og:title"
-    content="Happy Birthday Gowri ❤️"
-  >
+<meta name="theme-color" content="#08030a">
 
-  <meta
-    property="og:description"
-    content="Gowri, I made something special for you. Open this surprise when the time is right. ❤️🎂"
-  >
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <meta
-    property="og:url"
-    content="https://sivasankarroyal.github.io/gowri-birthday/"
-  >
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap"
+      rel="stylesheet">
 
-  <meta
-    property="og:site_name"
-    content="Gowri's Birthday Surprise"
-  >
-
-  <!-- Social Preview Image -->
-  <meta
-    property="og:image"
-    content="https://sivasankarroyal.github.io/gowri-birthday/preview.jpg"
-  >
-
-  <meta
-    property="og:image:alt"
-    content="Happy Birthday Gowri ❤️"
-  >
-
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image">
-
-  <meta
-    name="twitter:title"
-    content="Happy Birthday Gowri ❤️"
-  >
-
-  <meta
-    name="twitter:description"
-    content="A special birthday surprise made with love by Siva ❤️"
-  >
-
-  <meta
-    name="twitter:image"
-    content="https://sivasankarroyal.github.io/gowri-birthday/preview.jpg"
-  >
-
-  <!-- Theme -->
-  <meta name="theme-color" content="#08040c">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
 
-* {
+/* =========================================================
+   RESET
+========================================================= */
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -94,36 +65,59 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    background: #08030a;
 }
 
 body {
+    width: 100%;
+    min-height: 100%;
     background: #08030a;
     color: #fff;
     font-family: "Raleway", sans-serif;
     overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+}
+
+body,
+button {
+    -webkit-tap-highlight-color: transparent;
 }
 
 button {
     font-family: inherit;
 }
 
-.hidden {
-    display: none !important;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-/* =========================================
+
+/* =========================================================
    BACKGROUND
-========================================= */
+========================================================= */
 
 body::before {
     content: "";
     position: fixed;
     inset: 0;
     pointer-events: none;
+
     background:
-        radial-gradient(circle at 20% 20%, rgba(255, 60, 130, .12), transparent 30%),
-        radial-gradient(circle at 80% 70%, rgba(180, 60, 255, .10), transparent 35%),
-        radial-gradient(circle at 50% 50%, rgba(255, 120, 170, .04), transparent 50%);
+        radial-gradient(circle at 15% 15%,
+            rgba(255,60,130,.12),
+            transparent 30%),
+
+        radial-gradient(circle at 85% 75%,
+            rgba(180,60,255,.10),
+            transparent 35%),
+
+        radial-gradient(circle at 50% 50%,
+            rgba(255,120,170,.04),
+            transparent 50%);
+
     z-index: -3;
 }
 
@@ -132,6 +126,7 @@ body::before {
     inset: 0;
     pointer-events: none;
     z-index: -2;
+    overflow: hidden;
 }
 
 .star {
@@ -156,17 +151,27 @@ body::before {
     }
 }
 
-/* =========================================
+
+/* =========================================================
    LOCK SCREEN
-========================================= */
+========================================================= */
 
 #lockScreen {
     min-height: 100vh;
     min-height: 100svh;
+    min-height: 100dvh;
+
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+
+    padding:
+        max(20px, env(safe-area-inset-top))
+        18px
+        max(20px, env(safe-area-inset-bottom));
+
     position: relative;
     overflow: hidden;
 }
@@ -181,27 +186,32 @@ body::before {
 .lock-orb.one {
     width: 300px;
     height: 300px;
-    background: rgba(255, 30, 120, .13);
+    background: rgba(255,30,120,.13);
     top: 5%;
-    left: -100px;
+    left: -130px;
 }
 
 .lock-orb.two {
     width: 350px;
     height: 350px;
-    background: rgba(150, 40, 255, .10);
-    right: -130px;
+    background: rgba(150,40,255,.10);
+    right: -150px;
     bottom: 5%;
 }
 
 .lock-card {
-    width: min(700px, 100%);
+    width: min(700px,100%);
     text-align: center;
+
     padding: 55px 30px;
+
     border: 1px solid rgba(255,255,255,.10);
+
     background: rgba(255,255,255,.035);
+
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+
     border-radius: 35px;
 
     box-shadow:
@@ -225,13 +235,14 @@ body::before {
 
 .lock-heart {
     font-size: 58px;
+    line-height: 1;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     animation: heartbeat 1.5s infinite;
 }
 
 @keyframes heartbeat {
-    0%, 100% {
+    0%,100% {
         transform: scale(1);
     }
 
@@ -262,7 +273,8 @@ body::before {
 
 .lock-card h1 {
     font-family: "Playfair Display", serif;
-    font-size: clamp(42px, 8vw, 78px);
+    font-size: clamp(42px,8vw,78px);
+    line-height: 1;
     font-weight: 500;
     margin-bottom: 12px;
 }
@@ -273,17 +285,21 @@ body::before {
 
 .lock-message {
     min-height: 85px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     font-family: "Cormorant Garamond", serif;
-    font-size: clamp(22px, 4vw, 31px);
+
+    font-size: clamp(22px,4vw,31px);
+
     line-height: 1.35;
 
     color: rgba(255,255,255,.88);
 
     margin: 10px auto 25px;
+
     max-width: 600px;
 }
 
@@ -306,9 +322,11 @@ body::before {
 .time-box {
     width: 90px;
     padding: 15px 8px;
+
     border-radius: 18px;
 
     background: rgba(255,255,255,.045);
+
     border: 1px solid rgba(255,255,255,.08);
 }
 
@@ -316,6 +334,7 @@ body::before {
     display: block;
 
     font-family: "Playfair Display", serif;
+
     font-size: 30px;
     font-weight: 500;
 }
@@ -327,17 +346,25 @@ body::before {
     text-transform: uppercase;
 }
 
+.lock-button,
+.unlock-button {
+    max-width: 100%;
+    min-height: 52px;
+
+    border-radius: 50px;
+
+    padding: 16px 30px;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
 .lock-button {
     border: 1px solid rgba(255,255,255,.13);
 
     background: rgba(255,255,255,.045);
+
     color: rgba(255,255,255,.45);
-
-    padding: 17px 30px;
-    border-radius: 50px;
-
-    font-size: 12px;
-    letter-spacing: 2px;
 
     cursor: not-allowed;
 }
@@ -354,18 +381,10 @@ body::before {
             #a83cff
         );
 
-    padding: 18px 35px;
-    border-radius: 50px;
-
-    font-size: 12px;
-    letter-spacing: 2px;
-
     cursor: pointer;
 
     box-shadow:
         0 15px 45px rgba(255,60,140,.25);
-
-    transition: .35s;
 
     animation: unlockPulse 2s infinite;
 }
@@ -376,11 +395,13 @@ body::before {
 
 @keyframes unlockPulse {
     0%,100% {
-        box-shadow: 0 15px 45px rgba(255,60,140,.2);
+        box-shadow:
+            0 15px 45px rgba(255,60,140,.2);
     }
 
     50% {
-        box-shadow: 0 15px 70px rgba(255,60,140,.5);
+        box-shadow:
+            0 15px 70px rgba(255,60,140,.5);
     }
 }
 
@@ -390,15 +411,21 @@ body::before {
     color: rgba(255,255,255,.32);
 
     font-size: 11px;
+
     letter-spacing: 1px;
+
+    line-height: 1.6;
 }
 
-/* =========================================
+
+/* =========================================================
    MAIN SITE
-========================================= */
+========================================================= */
 
 #site {
     display: none;
+    width: 100%;
+    overflow: hidden;
 }
 
 #site.unlocked {
@@ -407,53 +434,66 @@ body::before {
 
 section {
     position: relative;
+    width: 100%;
     padding: 110px 22px;
 }
 
 .container {
-    width: min(1100px, 100%);
-    margin: auto;
+    width: min(1100px,100%);
+    margin: 0 auto;
 }
 
-/* =========================================
+
+/* =========================================================
    HERO
-========================================= */
+========================================================= */
 
 .hero {
     min-height: 100vh;
     min-height: 100svh;
+    min-height: 100dvh;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     text-align: center;
+
     overflow: hidden;
+
+    padding-top: max(60px,env(safe-area-inset-top));
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
+
+    width: 100%;
+    max-width: 1000px;
 }
 
 .hero-kicker {
     color: #ff94bb;
 
     letter-spacing: 6px;
+
     text-transform: uppercase;
 
     font-size: 11px;
+
     margin-bottom: 25px;
 
     animation: fadeUp 1s .2s both;
 }
 
 .hero h1 {
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display",serif;
 
-    font-size: clamp(58px, 12vw, 150px);
+    font-size:
+        clamp(58px,12vw,150px);
 
     line-height: .9;
+
     font-weight: 500;
 
     animation: fadeUp 1s .4s both;
@@ -481,9 +521,11 @@ section {
 
     max-width: 620px;
 
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Cormorant Garamond",serif;
 
     font-size: clamp(23px,4vw,35px);
+
+    line-height: 1.35;
 
     color: rgba(255,255,255,.82);
 
@@ -494,6 +536,7 @@ section {
     color: rgba(255,255,255,.45);
 
     letter-spacing: 3px;
+
     font-size: 11px;
 
     animation: fadeUp 1s .8s both;
@@ -503,6 +546,7 @@ section {
     margin-top: 55px;
 
     font-size: 10px;
+
     letter-spacing: 4px;
 
     color: rgba(255,255,255,.35);
@@ -534,9 +578,10 @@ section {
     }
 }
 
-/* =========================================
+
+/* =========================================================
    SECTION TITLES
-========================================= */
+========================================================= */
 
 .section-kicker {
     text-align: center;
@@ -544,6 +589,7 @@ section {
     color: #ff87b5;
 
     font-size: 10px;
+
     letter-spacing: 5px;
 
     text-transform: uppercase;
@@ -554,11 +600,13 @@ section {
 .section-title {
     text-align: center;
 
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display",serif;
 
     font-weight: 500;
 
     font-size: clamp(36px,7vw,65px);
+
+    line-height: 1.1;
 
     margin-bottom: 22px;
 }
@@ -575,100 +623,149 @@ section {
     line-height: 1.8;
 }
 
-/* =========================================
-   SONG
-========================================= */
 
-.song-section {
-    min-height: 100vh;
+/* =========================================================
+   JIOSAAVN MUSIC
+========================================================= */
 
-    display: flex;
-    align-items: center;
+.music-section {
+    padding-top: 75px;
+    padding-bottom: 90px;
 }
 
-.song-card {
-    max-width: 800px;
+.music-card {
+    width: min(800px,100%);
 
-    margin: auto;
+    margin: 0 auto;
 
-    padding: 55px 25px;
+    padding: 35px 20px;
 
-    border-radius: 35px;
+    border-radius: 30px;
+
+    text-align: center;
 
     background:
         linear-gradient(
             145deg,
             rgba(255,255,255,.055),
-            rgba(255,255,255,.018)
+            rgba(255,255,255,.015)
         );
 
-    border: 1px solid rgba(255,255,255,.09);
+    border:
+        1px solid
+        rgba(255,255,255,.09);
 
-    text-align: center;
+    box-shadow:
+        0 30px 90px
+        rgba(0,0,0,.25);
 }
 
-.song-icon {
-    font-size: 35px;
-    margin-bottom: 20px;
+.music-icon {
+    font-size: 38px;
+
+    margin-bottom: 14px;
+
+    animation: musicPulse 2s infinite;
 }
 
-.lyrics {
-    min-height: 250px;
+@keyframes musicPulse {
+    0%,100% {
+        transform: scale(1);
+    }
 
-    display: flex;
-    flex-direction: column;
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+.music-card h3 {
+    font-family:
+        "Playfair Display",serif;
+
+    font-size: 28px;
+
+    font-weight: 500;
+
+    margin-bottom: 8px;
+}
+
+.music-card p {
+    color:
+        rgba(255,255,255,.5);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 22px;
+}
+
+.jiosaavn-button {
+    display: inline-flex;
+
+    align-items: center;
+
     justify-content: center;
 
-    gap: 13px;
-}
+    min-height: 52px;
 
-.lyric {
-    font-family: "Cormorant Garamond", serif;
+    padding: 15px 28px;
 
-    font-size: clamp(22px,4vw,34px);
+    border-radius: 50px;
 
-    color: rgba(255,255,255,.42);
+    text-decoration: none;
 
-    transition: .7s;
-}
-
-.lyric.active {
     color: #fff;
 
-    transform: scale(1.04);
+    font-size: 11px;
 
-    text-shadow:
-        0 0 30px rgba(255,100,170,.45);
+    letter-spacing: 1.5px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4f91,
+            #a83cff
+        );
+
+    box-shadow:
+        0 15px 45px
+        rgba(255,60,140,.25);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
 }
 
-.song-control {
-    margin-top: 30px;
+.jiosaavn-button:hover {
+    color: #fff;
 
-    border: 1px solid rgba(255,255,255,.13);
+    transform:
+        translateY(-3px);
 
-    background: rgba(255,255,255,.04);
-
-    color: white;
-
-    padding: 13px 22px;
-
-    border-radius: 30px;
-
-    cursor: pointer;
-
-    transition: .3s;
+    box-shadow:
+        0 20px 60px
+        rgba(255,60,140,.4);
 }
 
-.song-control:hover {
-    background: rgba(255,255,255,.08);
-    transform: translateY(-2px);
+.music-note {
+    margin-top: 16px !important;
+
+    margin-bottom: 0 !important;
+
+    font-size: 10px !important;
+
+    color:
+        rgba(255,255,255,.3) !important;
 }
 
-/* =========================================
+
+/* =========================================================
    STORY
-========================================= */
+========================================================= */
 
 .story {
+    width: 100%;
     max-width: 800px;
     margin: auto;
 }
@@ -676,7 +773,8 @@ section {
 .story-item {
     position: relative;
 
-    padding: 30px 0 30px 35px;
+    padding:
+        30px 0 30px 35px;
 
     border-left:
         1px solid
@@ -689,6 +787,7 @@ section {
     position: absolute;
 
     left: -10px;
+
     top: 30px;
 
     font-size: 13px;
@@ -709,9 +808,12 @@ section {
 }
 
 .story-item h3 {
-    font-family: "Playfair Display", serif;
+    font-family:
+        "Playfair Display",serif;
 
     font-size: 28px;
+
+    line-height: 1.2;
 
     font-weight: 500;
 
@@ -719,14 +821,16 @@ section {
 }
 
 .story-item p {
-    color: rgba(255,255,255,.55);
+    color:
+        rgba(255,255,255,.55);
 
     line-height: 1.8;
 }
 
-/* =========================================
+
+/* =========================================================
    REASONS
-========================================= */
+========================================================= */
 
 .reasons-grid {
     display: grid;
@@ -744,13 +848,15 @@ section {
 
     border-radius: 28px;
 
-    background: rgba(255,255,255,.035);
+    background:
+        rgba(255,255,255,.035);
 
     border:
         1px solid
         rgba(255,255,255,.07);
 
     display: flex;
+
     flex-direction: column;
 
     justify-content: center;
@@ -771,48 +877,62 @@ section {
 
 .reason-card .emoji {
     font-size: 38px;
+
     margin-bottom: 18px;
 }
 
 .reason-card h3 {
-    font-family: "Playfair Display", serif;
+    font-family:
+        "Playfair Display",serif;
 
     font-size: 24px;
+
+    line-height: 1.2;
 
     margin-bottom: 10px;
 }
 
 .reason-card p {
-    color: rgba(255,255,255,.5);
+    color:
+        rgba(255,255,255,.5);
 
     line-height: 1.6;
 }
 
-/* =========================================
+
+/* =========================================================
    LOVE LETTER
-========================================= */
+========================================================= */
 
 .letter-wrap {
     display: flex;
+
     justify-content: center;
+
+    width: 100%;
 }
 
 .envelope {
-    width: min(700px,100%);
+    width:
+        min(700px,100%);
 
-    background: #fff9fc;
+    background:
+        #fff9fc;
 
-    color: #32121f;
+    color:
+        #32121f;
 
     border-radius: 8px;
 
-    padding: 45px 35px;
+    padding:
+        45px 35px;
 
     box-shadow:
         0 30px 100px
         rgba(0,0,0,.4);
 
-    transform: rotate(-.5deg);
+    transform:
+        rotate(-.5deg);
 }
 
 .envelope-top {
@@ -828,9 +948,13 @@ section {
 }
 
 .envelope h2 {
-    font-family: "Playfair Display", serif;
+    font-family:
+        "Playfair Display",serif;
 
-    font-size: clamp(32px,6vw,50px);
+    font-size:
+        clamp(32px,6vw,50px);
+
+    line-height: 1.1;
 
     font-weight: 500;
 
@@ -838,7 +962,8 @@ section {
 }
 
 .envelope p {
-    font-family: "Cormorant Garamond", serif;
+    font-family:
+        "Cormorant Garamond",serif;
 
     font-size: 21px;
 
@@ -850,16 +975,20 @@ section {
 .signature {
     margin-top: 30px;
 
-    font-family: "Playfair Display", serif;
+    font-family:
+        "Playfair Display",serif;
 
     font-size: 25px;
+
+    line-height: 1.4;
 
     color: #a33c67;
 }
 
-/* =========================================
+
+/* =========================================================
    GIFT
-========================================= */
+========================================================= */
 
 .gift-area {
     text-align: center;
@@ -869,17 +998,22 @@ section {
     width: 150px;
     height: 120px;
 
-    margin: 40px auto 25px;
+    margin:
+        40px auto 25px;
 
     position: relative;
 
     cursor: pointer;
 
     transition: .3s;
+
+    touch-action: manipulation;
 }
 
 .gift-box:hover {
-    transform: translateY(-6px) scale(1.03);
+    transform:
+        translateY(-6px)
+        scale(1.03);
 }
 
 .gift-body {
@@ -914,7 +1048,8 @@ section {
     width: 144px;
     height: 35px;
 
-    background: #ee4c8c;
+    background:
+        #ee4c8c;
 
     border-radius: 6px;
 
@@ -932,7 +1067,8 @@ section {
     left: 65px;
     top: 15px;
 
-    background: #ffd1df;
+    background:
+        #ffd1df;
 
     z-index: 3;
 }
@@ -946,7 +1082,8 @@ section {
     left: 3px;
     top: 55px;
 
-    background: #ffd1df;
+    background:
+        #ffd1df;
 
     z-index: 3;
 }
@@ -964,11 +1101,15 @@ section {
 
     margin: auto;
 
-    font-family: "Cormorant Garamond", serif;
+    font-family:
+        "Cormorant Garamond",serif;
 
     font-size: 26px;
 
-    color: rgba(255,255,255,.75);
+    line-height: 1.45;
+
+    color:
+        rgba(255,255,255,.75);
 }
 
 .hold-note {
@@ -976,11 +1117,15 @@ section {
 
     letter-spacing: 3px;
 
-    color: rgba(255,255,255,.3);
+    line-height: 1.5;
+
+    color:
+        rgba(255,255,255,.3);
 }
 
 .promise {
-    margin: 50px auto 0;
+    margin:
+        50px auto 0;
 
     max-width: 700px;
 
@@ -997,7 +1142,8 @@ section {
 
     opacity: 0;
 
-    transform: translateY(20px);
+    transform:
+        translateY(20px);
 
     transition: .8s;
 }
@@ -1010,16 +1156,18 @@ section {
 }
 
 .promise p {
-    font-family: "Cormorant Garamond", serif;
+    font-family:
+        "Cormorant Garamond",serif;
 
     font-size: 26px;
 
     line-height: 1.6;
 }
 
-/* =========================================
+
+/* =========================================================
    CAKE
-========================================= */
+========================================================= */
 
 .cake-section {
     text-align: center;
@@ -1031,7 +1179,8 @@ section {
     width: 260px;
     height: 220px;
 
-    margin: 40px auto;
+    margin:
+        40px auto;
 }
 
 .cake-layer {
@@ -1077,13 +1226,11 @@ section {
     width: 180px;
     height: 40px;
 
-    background: #fff1f7;
+    background:
+        #fff1f7;
 
     border-radius:
-        20px
-        20px
-        12px
-        12px;
+        20px 20px 12px 12px;
 }
 
 .candle {
@@ -1117,15 +1264,14 @@ section {
     width: 15px;
     height: 22px;
 
-    background: #ffd36b;
+    background:
+        #ffd36b;
 
     border-radius:
-        50%
-        50%
-        50%
-        0;
+        50% 50% 50% 0;
 
-    transform: rotate(-45deg);
+    transform:
+        rotate(-45deg);
 
     top: -18px;
     left: -2px;
@@ -1135,8 +1281,7 @@ section {
         #ffb52e;
 
     animation:
-        flame 1s
-        infinite alternate;
+        flame 1s infinite alternate;
 }
 
 @keyframes flame {
@@ -1158,6 +1303,8 @@ section {
 }
 
 .cake-button {
+    min-height: 52px;
+
     border: 0;
 
     background:
@@ -1169,7 +1316,8 @@ section {
 
     color: white;
 
-    padding: 16px 28px;
+    padding:
+        16px 28px;
 
     border-radius: 50px;
 
@@ -1180,32 +1328,42 @@ section {
     font-size: 11px;
 
     transition: .3s;
+
+    touch-action: manipulation;
 }
 
 .cake-button:hover {
-    transform: translateY(-3px);
+    transform:
+        translateY(-3px);
 }
 
-/* =========================================
+
+/* =========================================================
    FINAL
-========================================= */
+========================================================= */
 
 .final {
     min-height: 100vh;
     min-height: 100svh;
+    min-height: 100dvh;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     text-align: center;
 
     overflow: hidden;
+
+    padding:
+        100px 20px;
 }
 
 .final h2 {
-    font-family: "Playfair Display", serif;
+    font-family:
+        "Playfair Display",serif;
 
     font-size:
         clamp(
@@ -1228,13 +1386,15 @@ section {
 .final p {
     margin-top: 35px;
 
-    color: rgba(255,255,255,.5);
+    color:
+        rgba(255,255,255,.5);
 
     font-family:
-        "Cormorant Garamond",
-        serif;
+        "Cormorant Garamond",serif;
 
     font-size: 25px;
+
+    line-height: 1.4;
 }
 
 .final-heart {
@@ -1246,18 +1406,22 @@ section {
         heartbeat 1.5s infinite;
 }
 
-/* =========================================
-   MUSIC BUTTON
-========================================= */
+
+/* =========================================================
+   FLOATING MUSIC BUTTON
+========================================================= */
 
 .music-btn {
     position: fixed;
 
-    right: 20px;
-    bottom: 20px;
+    right:
+        max(16px,env(safe-area-inset-right));
 
-    width: 48px;
-    height: 48px;
+    bottom:
+        max(16px,env(safe-area-inset-bottom));
+
+    width: 50px;
+    height: 50px;
 
     border-radius: 50%;
 
@@ -1266,27 +1430,34 @@ section {
         rgba(255,255,255,.15);
 
     background:
-        rgba(20,5,15,.7);
+        rgba(20,5,15,.82);
 
     color: white;
 
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter:
+        blur(12px);
+
+    -webkit-backdrop-filter:
+        blur(12px);
 
     z-index: 100;
 
     cursor: pointer;
 
     transition: .3s;
+
+    touch-action: manipulation;
 }
 
 .music-btn:hover {
-    transform: scale(1.08);
+    transform:
+        scale(1.08);
 }
 
-/* =========================================
+
+/* =========================================================
    PROGRESS
-========================================= */
+========================================================= */
 
 .progress {
     position: fixed;
@@ -1308,9 +1479,10 @@ section {
     z-index: 200;
 }
 
-/* =========================================
+
+/* =========================================================
    HEARTS
-========================================= */
+========================================================= */
 
 .floating-heart {
     position: fixed;
@@ -1325,6 +1497,10 @@ section {
         forwards;
 
     font-size: 20px;
+
+    will-change:
+        transform,
+        opacity;
 }
 
 @keyframes heartFly {
@@ -1353,81 +1529,601 @@ section {
     }
 }
 
-/* =========================================
-   RESPONSIVE
-========================================= */
 
-@media (max-width: 700px) {
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width:900px) {
 
     section {
-        padding: 80px 18px;
+        padding:
+            95px 24px;
+    }
+
+    .reasons-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .hero h1 {
+        font-size:
+            clamp(58px,13vw,105px);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:700px) {
+
+    section {
+        padding:
+            76px 16px;
+    }
+
+    .section-kicker {
+        font-size: 9px;
+
+        letter-spacing: 4px;
+    }
+
+    .section-title {
+        font-size:
+            clamp(34px,10vw,48px);
+
+        line-height: 1.05;
+    }
+
+    .section-intro {
+        font-size: 15px;
+
+        line-height: 1.75;
+
+        margin-bottom: 38px;
+    }
+
+
+    /* LOCK */
+
+    #lockScreen {
+        padding:
+            20px 14px
+            max(20px,env(safe-area-inset-bottom));
     }
 
     .lock-card {
-        padding: 45px 18px;
-        border-radius: 25px;
+        width: 100%;
+
+        padding:
+            38px 18px 32px;
+
+        border-radius: 24px;
+    }
+
+    .lock-heart {
+        font-size: 48px;
+    }
+
+    .lock-card .small-title {
+        font-size: 8px;
+
+        letter-spacing: 3px;
+    }
+
+    .lock-card h1 {
+        font-size:
+            clamp(43px,15vw,62px);
+    }
+
+    .lock-message {
+        min-height: 105px;
+
+        font-size:
+            clamp(21px,6.1vw,27px);
+
+        line-height: 1.28;
+    }
+
+    .countdown {
+        display: grid;
+
+        grid-template-columns:
+            repeat(4,1fr);
+
+        gap: 7px;
     }
 
     .time-box {
-        width: 72px;
+        width: 100%;
+
+        padding:
+            11px 3px;
+
+        border-radius: 13px;
     }
 
     .time-box strong {
+        font-size:
+            clamp(20px,6vw,25px);
+    }
+
+    .time-box small {
+        font-size: 7px;
+
+        letter-spacing: 1px;
+    }
+
+    .lock-button,
+    .unlock-button {
+        width: 100%;
+
+        max-width: 330px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height:
+            100svh;
+
+        min-height:
+            100dvh;
+
+        padding:
+            50px 16px;
+    }
+
+    .hero-kicker {
+        font-size: 8px;
+
+        letter-spacing: 3px;
+
+        line-height: 1.6;
+    }
+
+    .hero h1 {
+        font-size:
+            clamp(
+                50px,
+                16vw,
+                78px
+            );
+
+        line-height: .92;
+    }
+
+    .hero-sub {
+        max-width: 340px;
+
+        font-size:
+            clamp(21px,6.2vw,28px);
+
+        line-height: 1.3;
+    }
+
+    .hero-date {
+        font-size: 9px;
+
+        letter-spacing: 2px;
+    }
+
+    .scroll-hint {
+        margin-top: 42px;
+
+        font-size: 8px;
+
+        letter-spacing: 2.5px;
+    }
+
+
+    /* JIOSAAVN */
+
+    .music-section {
+        padding-top: 70px;
+    }
+
+    .music-card {
+        padding:
+            30px 15px;
+
+        border-radius: 24px;
+    }
+
+    .music-icon {
+        font-size: 30px;
+    }
+
+    .music-card h3 {
         font-size: 24px;
+    }
+
+    .music-card p {
+        font-size: 13px;
+
+        line-height: 1.65;
+    }
+
+    .jiosaavn-button {
+        width: 100%;
+
+        max-width: 310px;
+
+        font-size: 10px;
+
+        letter-spacing: 1px;
+    }
+
+
+    /* STORY */
+
+    .story {
+        padding:
+            0 3px;
+    }
+
+    .story-item {
+        padding:
+            25px 0 25px 25px;
+    }
+
+    .story-item h3 {
+        font-size: 23px;
+    }
+
+    .story-item p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    /* REASONS */
+
+    .reasons-grid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+    .reason-card {
+        min-height: 0;
+
+        padding:
+            28px 22px;
+
+        border-radius: 22px;
+    }
+
+    .reason-card:hover {
+        transform: none;
+    }
+
+    .reason-card .emoji {
+        font-size: 34px;
+    }
+
+    .reason-card h3 {
+        font-size: 22px;
+    }
+
+    .reason-card p {
+        font-size: 14px;
+    }
+
+
+    /* LETTER */
+
+    .envelope {
+        width: 100%;
+
+        padding:
+            30px 21px;
+
+        transform:
+            rotate(0deg);
+    }
+
+    .envelope-top {
+        font-size: 8px;
+
+        letter-spacing: 2.5px;
+    }
+
+    .envelope h2 {
+        font-size:
+            clamp(32px,10vw,42px);
+    }
+
+    .envelope p {
+        font-size: 19px;
+
+        line-height: 1.6;
+    }
+
+    .signature {
+        font-size: 22px;
+    }
+
+
+    /* GIFT */
+
+    .gift-box {
+        width: 140px;
+        height: 115px;
+    }
+
+    .gift-body {
+        width: 120px;
+        height: 85px;
+    }
+
+    .gift-lid {
+        width: 138px;
+    }
+
+    .gift-ribbon-v {
+        height: 115px;
+        left: 61px;
+    }
+
+    .gift-ribbon-h {
+        width: 138px;
+    }
+
+    .gift-message {
+        min-height: 90px;
+
+        font-size: 22px;
+
+        line-height: 1.4;
+    }
+
+    .promise {
+        margin-top: 35px;
+
+        padding:
+            23px 18px;
+
+        border-radius: 20px;
+    }
+
+    .promise p {
+        font-size: 22px;
+
+        line-height: 1.5;
+    }
+
+
+    /* CAKE */
+
+    .cake-section {
+        padding-top: 80px;
+    }
+
+    .cake {
+        width: 230px;
+        height: 195px;
+
+        transform:
+            scale(.88);
+
+        transform-origin:
+            center;
+
+        margin:
+            25px auto 15px;
+    }
+
+    .cake-button {
+        width: 100%;
+
+        max-width: 280px;
+    }
+
+
+    /* FINAL */
+
+    .final {
+        min-height:
+            100svh;
+
+        min-height:
+            100dvh;
+
+        padding:
+            90px 18px;
+    }
+
+    .final h2 {
+        font-size:
+            clamp(
+                48px,
+                15vw,
+                72px
+            );
+
+        line-height: .92;
+    }
+
+    .final p {
+        margin-top: 27px;
+
+        font-size: 22px;
+    }
+
+    .final-heart {
+        font-size: 40px;
+    }
+
+
+    /* MUSIC BUTTON */
+
+    .music-btn {
+        width: 46px;
+        height: 46px;
+
+        right:
+            max(13px,env(safe-area-inset-right));
+
+        bottom:
+            max(13px,env(safe-area-inset-bottom));
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width:360px) {
+
+    section {
+        padding:
+            65px 13px;
+    }
+
+    .lock-card {
+        padding:
+            32px 14px 27px;
+    }
+
+    .lock-heart {
+        font-size: 42px;
+    }
+
+    .lock-card h1 {
+        font-size: 43px;
     }
 
     .lock-message {
         min-height: 110px;
-    }
 
-    .reasons-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .reason-card {
-        min-height: 210px;
-    }
-
-    .envelope {
-        padding: 32px 22px;
-    }
-
-    .envelope p {
         font-size: 20px;
     }
 
-    .gift-message {
-        font-size: 23px;
+    .time-box strong {
+        font-size: 19px;
+    }
+
+    .hero h1 {
+        font-size:
+            clamp(45px,15vw,62px);
+    }
+
+    .hero-sub {
+        font-size: 20px;
+    }
+
+    .envelope {
+        padding:
+            27px 18px;
+    }
+
+    .envelope p {
+        font-size: 18px;
+    }
+
+    .promise p {
+        font-size: 20px;
+    }
+
+    .cake {
+        transform:
+            scale(.78);
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
+
+/* =========================================================
+   VERY SMALL
+========================================================= */
+
+@media (max-width:330px) {
+
+    .lock-card h1 {
+        font-size: 39px;
+    }
+
+    .lock-message {
+        font-size: 19px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .envelope p {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================================================
+   TOUCH
+========================================================= */
+
+@media (hover:none) {
+
+    .unlock-button:hover,
+    .jiosaavn-button:hover,
+    .cake-button:hover,
+    .gift-box:hover,
+    .music-btn:hover {
+        transform: none;
+    }
+
+    .reason-card:hover {
+        transform: none;
+        background:
+            rgba(255,255,255,.035);
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion:reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
 
     *,
     *::before,
     *::after {
-        animation-duration: .01ms !important;
+        animation-duration:
+            .01ms !important;
 
         animation-iteration-count:
             1 !important;
-
-        scroll-behavior:
-            auto !important;
 
         transition-duration:
             .01ms !important;
     }
 }
+
 </style>
 </head>
+
 
 <body>
 
 <div id="stars"></div>
 
-<!-- =========================================
+
+<!-- =========================================================
      LOCK SCREEN
-========================================= -->
+========================================================= -->
 
 <div id="lockScreen">
 
@@ -1450,22 +2146,17 @@ section {
 
         <div
             class="lock-message"
-            id="lockMessage"
-        >
-            Something very special is waiting for you...
+            id="lockMessage">
         </div>
 
         <div
             class="visit-label"
-            id="visitLabel"
-        >
-            Your little surprise is locked
+            id="visitLabel">
         </div>
 
         <div
             class="countdown"
-            id="countdown"
-        >
+            id="countdown">
 
             <div class="time-box">
                 <strong id="days">00</strong>
@@ -1492,15 +2183,13 @@ section {
         <button
             id="lockButton"
             class="lock-button"
-            disabled
-        >
+            disabled>
             🔒 SURPRISE LOCKED
         </button>
 
         <div
             class="midnight-note"
-            id="midnightNote"
-        >
+            id="midnightNote">
             Come back at midnight, my love... 🌙
         </div>
 
@@ -1509,620 +2198,664 @@ section {
 </div>
 
 
-<!-- =========================================
-     MAIN BIRTHDAY SITE
-========================================= -->
+<!-- =========================================================
+     MAIN SITE
+========================================================= -->
 
 <main id="site">
 
-    <!-- HERO -->
 
-    <section class="hero">
+<!-- =========================================================
+     HERO
+========================================================= -->
 
-        <div class="hero-content">
+<section class="hero">
 
-            <div class="hero-kicker">
-                September 28 • Your Special Day
-            </div>
+    <div class="hero-content">
 
-            <h1>
-                Happy Birthday
-                <span>
-                    Gowri ❤️
-                </span>
-            </h1>
-
-            <div class="hero-sub">
-                Tonight, this little world exists only for you.
-            </div>
-
-            <div class="hero-date">
-                Made with all my love, just for you.
-            </div>
-
-            <div class="scroll-hint">
-                ↓ SCROLL INTO OUR STORY ↓
-            </div>
-
+        <div class="hero-kicker">
+            September 28 • Your Special Day
         </div>
 
-    </section>
+        <h1>
+            Happy Birthday
+            <span>
+                Gowri ❤️
+            </span>
+        </h1>
+
+        <div class="hero-sub">
+            Tonight, this little world exists only for you.
+        </div>
+
+        <div class="hero-date">
+            Made with all my love, just for you.
+        </div>
+
+        <div class="scroll-hint">
+            ↓ SCROLL INTO OUR STORY ↓
+        </div>
+
+    </div>
+
+</section>
 
 
-    <!-- SONG -->
+<!-- =========================================================
+     MUSIC
+========================================================= -->
 
-    <section class="song-section">
+<section class="music-section">
 
-        <div class="container">
+    <div class="container">
 
-            <div class="section-kicker">
-                A Song From My Heart
+        <div class="section-kicker">
+            Our Music
+        </div>
+
+        <h2 class="section-title">
+            A Song For You 🎵
+        </h2>
+
+        <p class="section-intro">
+            Put on your headphones, my love.
+            I picked this romantic Telugu playlist
+            to stay with you while you explore
+            your birthday surprise. ❤️
+        </p>
+
+
+        <div class="music-card">
+
+            <div class="music-icon">
+                🎧
             </div>
 
-            <h2 class="section-title">
-                నువ్వే నా లోకం ❤️
-            </h2>
+            <h3>
+                Our Romantic Soundtrack
+            </h3>
 
-            <p class="section-intro">
-                If my heart could sing,
-                these are the words it would sing for you.
+            <p>
+                Tap below to open the JioSaavn playlist.
+                Keep it playing while you scroll through
+                the rest of your surprise.
             </p>
 
-            <div class="song-card">
+            <a
+                class="jiosaavn-button"
+                id="jioButton"
+                href="https://www.jiosaavn.com/featured/best-of-romance-telugu/RvsohkkonJJieSJqt9HmOQ__"
+                target="_blank"
+                rel="noopener noreferrer">
 
-                <div class="song-icon">
-                    🎵
-                </div>
+                🎵 PLAY OUR ROMANTIC SONGS
 
-                <div class="lyrics">
+            </a>
 
-                    <div class="lyric active">
-                        నువ్వే నా లోకం… నువ్వే నా ప్రాణం ❤️
-                    </div>
-
-                    <div class="lyric">
-                        నీతోనే మొదలయ్యే ప్రతి ఉదయం…
-                    </div>
-
-                    <div class="lyric">
-                        నీ నవ్వే నా పాట… నీ చూపే నా మాట…
-                    </div>
-
-                    <div class="lyric">
-                        నీతోనే సాగాలి ఈ జీవితం… ✨
-                    </div>
-
-                    <div class="lyric">
-                        గౌరి… ఓ గౌరి… నా గుండెలో నువ్వే…
-                    </div>
-
-                    <div class="lyric">
-                        నిన్ను చూసిన క్షణమే ప్రేమైపోయానే…
-                    </div>
-
-                    <div class="lyric">
-                        ఈ జన్మకే కాదు… ప్రతి జన్మలో నువ్వే… ❤️
-                    </div>
-
-                </div>
-
-                <button
-                    class="song-control"
-                    id="musicControl"
-                >
-                    ♫ Play My Little Song
-                </button>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- STORY -->
-
-    <section>
-
-        <div class="container">
-
-            <div class="section-kicker">
-                Us
-            </div>
-
-            <h2 class="section-title">
-                Our Little Story
-            </h2>
-
-            <p class="section-intro">
-                Some stories are written with words.
-                Ours is written with moments,
-                smiles, memories and love.
+            <p class="music-note">
+                Best experienced with headphones ❤️
             </p>
 
-            <div class="story">
+        </div>
 
-                <div class="story-item">
+    </div>
 
-                    <div class="story-number">
-                        CHAPTER 01
-                    </div>
-
-                    <h3>
-                        The Beginning
-                    </h3>
-
-                    <p>
-                        Somewhere along the way,
-                        you became more than just someone
-                        in my life. You became my favorite
-                        part of it.
-                    </p>
-
-                </div>
+</section>
 
 
-                <div class="story-item">
+<!-- =========================================================
+     TELUGU LOVE SONG
+========================================================= -->
 
-                    <div class="story-number">
-                        CHAPTER 02
-                    </div>
+<section>
 
-                    <h3>
-                        My Favorite Person
-                    </h3>
+    <div class="container">
 
-                    <p>
-                        Your smile became one of those
-                        little things I never want
-                        to live without.
-                    </p>
+        <div class="section-kicker">
+            From My Heart
+        </div>
 
-                </div>
+        <h2 class="section-title">
+            నువ్వే నా లోకం ❤️
+        </h2>
 
+        <p class="section-intro">
+            If my heart could sing,
+            these are the words it would sing for you.
+        </p>
 
-                <div class="story-item">
+        <div class="music-card">
 
-                    <div class="story-number">
-                        CHAPTER 03
-                    </div>
+            <div class="music-icon">
+                ❤️
+            </div>
 
-                    <h3>
-                        Our Life
-                    </h3>
+            <div style="
+                font-family:'Cormorant Garamond',serif;
+                font-size:clamp(22px,5vw,32px);
+                line-height:1.6;
+                color:rgba(255,255,255,.78);
+            ">
 
-                    <p>
-                        Through every beautiful day
-                        and every difficult moment,
-                        having you beside me makes
-                        everything more meaningful.
-                    </p>
+                <div>నువ్వే నా లోకం… నువ్వే నా ప్రాణం ❤️</div>
 
-                </div>
+                <div>నీతోనే మొదలయ్యే ప్రతి ఉదయం…</div>
 
+                <div>నీ నవ్వే నా పాట… నీ చూపే నా మాట…</div>
 
-                <div class="story-item">
+                <div>నీతోనే సాగాలి ఈ జీవితం… ✨</div>
 
-                    <div class="story-number">
-                        CHAPTER 04
-                    </div>
+                <div>గౌరి… ఓ గౌరి… నా గుండెలో నువ్వే…</div>
 
-                    <h3>
-                        Forever
-                    </h3>
+                <div>నిన్ను చూసిన క్షణమే ప్రేమైపోయానే…</div>
 
-                    <p>
-                        I don't just want more memories
-                        with you. I want a lifetime
-                        of them.
-                    </p>
-
-                </div>
+                <div>ఈ జన్మకే కాదు… ప్రతి జన్మలో నువ్వే… ❤️</div>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- REASONS -->
+<!-- =========================================================
+     STORY
+========================================================= -->
 
-    <section>
+<section>
 
-        <div class="container">
+    <div class="container">
 
-            <div class="section-kicker">
-                Little Things
-            </div>
-
-            <h2 class="section-title">
-                Why I Love You
-            </h2>
-
-            <p class="section-intro">
-                I could write a thousand reasons.
-                These are just a few.
-            </p>
-
-            <div class="reasons-grid">
-
-                <div class="reason-card">
-
-                    <div class="emoji">
-                        😊
-                    </div>
-
-                    <h3>
-                        Your Smile
-                    </h3>
-
-                    <p>
-                        Somehow your smile can make
-                        even an ordinary day feel special.
-                    </p>
-
-                </div>
-
-
-                <div class="reason-card">
-
-                    <div class="emoji">
-                        ❤️
-                    </div>
-
-                    <h3>
-                        Your Heart
-                    </h3>
-
-                    <p>
-                        The kindness, love and warmth
-                        you carry inside you are beautiful.
-                    </p>
-
-                </div>
-
-
-                <div class="reason-card">
-
-                    <div class="emoji">
-                        🏡
-                    </div>
-
-                    <h3>
-                        You Feel Like Home
-                    </h3>
-
-                    <p>
-                        Wherever we are, being with you
-                        feels like I'm exactly where
-                        I'm supposed to be.
-                    </p>
-
-                </div>
-
-
-                <div class="reason-card">
-
-                    <div class="emoji">
-                        ✨
-                    </div>
-
-                    <h3>
-                        Your Little Things
-                    </h3>
-
-                    <p>
-                        The tiny habits and moments
-                        that make you uniquely you.
-                    </p>
-
-                </div>
-
-
-                <div class="reason-card">
-
-                    <div class="emoji">
-                        🤝
-                    </div>
-
-                    <h3>
-                        Us
-                    </h3>
-
-                    <p>
-                        Because together, we have something
-                        that means more to me than I can explain.
-                    </p>
-
-                </div>
-
-
-                <div class="reason-card">
-
-                    <div class="emoji">
-                        ♾️
-                    </div>
-
-                    <h3>
-                        Forever
-                    </h3>
-
-                    <p>
-                        Because when I imagine my future,
-                        you're already there.
-                    </p>
-
-                </div>
-
-            </div>
-
+        <div class="section-kicker">
+            Us
         </div>
 
-    </section>
+        <h2 class="section-title">
+            Our Little Story
+        </h2>
 
+        <p class="section-intro">
+            Some stories are written with words.
+            Ours is written with moments,
+            smiles, memories and love.
+        </p>
 
-    <!-- LETTER -->
+        <div class="story">
 
-    <section>
+            <div class="story-item">
 
-        <div class="container">
-
-            <div class="section-kicker">
-                Open My Heart
-            </div>
-
-            <h2 class="section-title">
-                A Letter For You
-            </h2>
-
-            <div class="letter-wrap">
-
-                <div class="envelope">
-
-                    <div class="envelope-top">
-                        Written only for Gowri
-                    </div>
-
-                    <h2>
-                        My Love,
-                    </h2>
-
-                    <p>
-                        Happy Birthday to the woman who makes
-                        my world a little brighter simply by
-                        being in it.
-                    </p>
-
-                    <p>
-                        There are many things I can say,
-                        but sometimes words aren't enough
-                        to explain how much you mean to me.
-                    </p>
-
-                    <p>
-                        Thank you for every smile,
-                        every conversation, every beautiful
-                        memory and every moment we've shared.
-                    </p>
-
-                    <p>
-                        I don't know what the future has
-                        planned for us, but I know one thing —
-                        I want to experience it with you.
-                    </p>
-
-                    <p>
-                        Today is your birthday, but I feel
-                        like I'm the lucky one because I get
-                        to call you mine.
-                    </p>
-
-                    <p>
-                        Keep smiling. Keep being the beautiful
-                        person you are. And whenever life gets
-                        difficult, remember that I'll always
-                        be standing beside you.
-                    </p>
-
-                    <div class="signature">
-                        Forever yours,<br>
-                        Siva ❤️
-                    </div>
-
+                <div class="story-number">
+                    CHAPTER 01
                 </div>
 
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- GIFT -->
-
-    <section>
-
-        <div class="container gift-area">
-
-            <div class="section-kicker">
-                One More Thing
-            </div>
-
-            <h2 class="section-title">
-                There's A Secret...
-            </h2>
-
-            <p class="section-intro">
-                You found your way this far.
-                Now open the little gift I made for you.
-            </p>
-
-            <div
-                class="gift-box"
-                id="giftBox"
-                title="Click to open"
-            >
-
-                <div class="gift-lid"></div>
-
-                <div class="gift-body"></div>
-
-                <div class="gift-ribbon-v"></div>
-
-                <div class="gift-ribbon-h"></div>
-
-            </div>
-
-            <div
-                class="gift-message"
-                id="giftMessage"
-            >
-                Tap the gift ❤️
-            </div>
-
-            <div class="hold-note">
-                ONE LITTLE SURPRISE INSIDE
-            </div>
-
-            <div
-                class="promise"
-                id="promise"
-            >
+                <h3>
+                    The Beginning
+                </h3>
 
                 <p>
-                    “I promise to keep choosing you,
-                    keep making memories with you,
-                    keep laughing with you,
-                    and keep loving you —
-                    today, tomorrow and every day after that. ❤️”
+                    Somewhere along the way,
+                    you became more than just someone
+                    in my life. You became my favorite
+                    part of it.
+                </p>
+
+            </div>
+
+
+            <div class="story-item">
+
+                <div class="story-number">
+                    CHAPTER 02
+                </div>
+
+                <h3>
+                    My Favorite Person
+                </h3>
+
+                <p>
+                    Your smile became one of those
+                    little things I never want
+                    to live without.
+                </p>
+
+            </div>
+
+
+            <div class="story-item">
+
+                <div class="story-number">
+                    CHAPTER 03
+                </div>
+
+                <h3>
+                    Our Life
+                </h3>
+
+                <p>
+                    Through every beautiful day
+                    and every difficult moment,
+                    having you beside me makes
+                    everything more meaningful.
+                </p>
+
+            </div>
+
+
+            <div class="story-item">
+
+                <div class="story-number">
+                    CHAPTER 04
+                </div>
+
+                <h3>
+                    Forever
+                </h3>
+
+                <p>
+                    I don't just want more memories
+                    with you. I want a lifetime
+                    of them.
                 </p>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- CAKE -->
+<!-- =========================================================
+     REASONS
+========================================================= -->
 
-    <section class="cake-section">
+<section>
 
-        <div class="container">
+    <div class="container">
 
-            <div class="section-kicker">
-                Make A Wish
+        <div class="section-kicker">
+            Little Things
+        </div>
+
+        <h2 class="section-title">
+            Why I Love You
+        </h2>
+
+        <p class="section-intro">
+            I could write a thousand reasons.
+            These are just a few.
+        </p>
+
+        <div class="reasons-grid">
+
+            <div class="reason-card">
+
+                <div class="emoji">😊</div>
+
+                <h3>
+                    Your Smile
+                </h3>
+
+                <p>
+                    Somehow your smile can make
+                    even an ordinary day feel special.
+                </p>
+
             </div>
 
-            <h2 class="section-title">
-                Your Birthday Cake 🎂
-            </h2>
 
-            <p class="section-intro">
-                Close your eyes, make a wish
-                and blow the candles.
-            </p>
+            <div class="reason-card">
 
-            <div class="cake">
+                <div class="emoji">❤️</div>
 
-                <div class="cake-layer layer1"></div>
+                <h3>
+                    Your Heart
+                </h3>
 
-                <div class="cake-layer layer2"></div>
-
-                <div class="icing"></div>
-
-                <div class="candle">
-                    <div class="flame"></div>
-                </div>
-
-                <div class="candle">
-                    <div class="flame"></div>
-                </div>
-
-                <div class="candle">
-                    <div class="flame"></div>
-                </div>
+                <p>
+                    The kindness, love and warmth
+                    you carry inside you are beautiful.
+                </p>
 
             </div>
 
-            <button
-                class="cake-button"
-                id="blowButton"
-            >
-                🕯️ BLOW THE CANDLES
-            </button>
+
+            <div class="reason-card">
+
+                <div class="emoji">🏡</div>
+
+                <h3>
+                    You Feel Like Home
+                </h3>
+
+                <p>
+                    Wherever we are, being with you
+                    feels like I'm exactly where
+                    I'm supposed to be.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="emoji">✨</div>
+
+                <h3>
+                    Your Little Things
+                </h3>
+
+                <p>
+                    The tiny habits and moments
+                    that make you uniquely you.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="emoji">🤝</div>
+
+                <h3>
+                    Us
+                </h3>
+
+                <p>
+                    Because together, we have something
+                    that means more to me than I can explain.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="emoji">♾️</div>
+
+                <h3>
+                    Forever
+                </h3>
+
+                <p>
+                    Because when I imagine my future,
+                    you're already there.
+                </p>
+
+            </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- FINAL -->
+<!-- =========================================================
+     LETTER
+========================================================= -->
 
-    <section
-        class="final"
-        id="final"
-    >
+<section>
 
-        <div>
+    <div class="container">
 
-            <div class="section-kicker">
-                And Finally...
+        <div class="section-kicker">
+            Open My Heart
+        </div>
+
+        <h2 class="section-title">
+            A Letter For You
+        </h2>
+
+        <div class="letter-wrap">
+
+            <div class="envelope">
+
+                <div class="envelope-top">
+                    Written only for Gowri
+                </div>
+
+                <h2>
+                    My Love,
+                </h2>
+
+                <p>
+                    Happy Birthday to the woman who makes
+                    my world a little brighter simply by
+                    being in it.
+                </p>
+
+                <p>
+                    There are many things I can say,
+                    but sometimes words aren't enough
+                    to explain how much you mean to me.
+                </p>
+
+                <p>
+                    Thank you for every smile,
+                    every conversation, every beautiful
+                    memory and every moment we've shared.
+                </p>
+
+                <p>
+                    I don't know what the future has
+                    planned for us, but I know one thing —
+                    I want to experience it with you.
+                </p>
+
+                <p>
+                    Today is your birthday, but I feel
+                    like I'm the lucky one because I get
+                    to call you mine.
+                </p>
+
+                <p>
+                    Keep smiling. Keep being the beautiful
+                    person you are. And whenever life gets
+                    difficult, remember that I'll always
+                    be standing beside you.
+                </p>
+
+                <div class="signature">
+                    Forever yours,<br>
+                    Siva ❤️
+                </div>
+
             </div>
 
-            <h2>
-                I Love
-                <span>
-                    You, Gowri ❤️
-                </span>
-            </h2>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     GIFT
+========================================================= -->
+
+<section>
+
+    <div class="container gift-area">
+
+        <div class="section-kicker">
+            One More Thing
+        </div>
+
+        <h2 class="section-title">
+            There's A Secret...
+        </h2>
+
+        <p class="section-intro">
+            You found your way this far.
+            Now open the little gift I made for you.
+        </p>
+
+        <div
+            class="gift-box"
+            id="giftBox">
+
+            <div class="gift-lid"></div>
+
+            <div class="gift-body"></div>
+
+            <div class="gift-ribbon-v"></div>
+
+            <div class="gift-ribbon-h"></div>
+
+        </div>
+
+        <div
+            class="gift-message"
+            id="giftMessage">
+
+            Tap the gift ❤️
+
+        </div>
+
+        <div class="hold-note">
+            ONE LITTLE SURPRISE INSIDE
+        </div>
+
+        <div
+            class="promise"
+            id="promise">
 
             <p>
-                More than yesterday.<br>
-                Less than tomorrow.
+                “I promise to keep choosing you,
+                keep making memories with you,
+                keep laughing with you,
+                and keep loving you —
+                today, tomorrow and every day after that. ❤️”
             </p>
 
-            <div class="final-heart">
-                ❤️
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CAKE
+========================================================= -->
+
+<section class="cake-section">
+
+    <div class="container">
+
+        <div class="section-kicker">
+            Make A Wish
+        </div>
+
+        <h2 class="section-title">
+            Your Birthday Cake 🎂
+        </h2>
+
+        <p class="section-intro">
+            Close your eyes, make a wish
+            and blow the candles.
+        </p>
+
+        <div class="cake">
+
+            <div class="cake-layer layer1"></div>
+
+            <div class="cake-layer layer2"></div>
+
+            <div class="icing"></div>
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle">
+                <div class="flame"></div>
             </div>
 
         </div>
 
-    </section>
+        <button
+            class="cake-button"
+            id="blowButton">
+
+            🕯️ BLOW THE CANDLES
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL
+========================================================= -->
+
+<section
+    class="final"
+    id="final">
+
+    <div>
+
+        <div class="section-kicker">
+            And Finally...
+        </div>
+
+        <h2>
+            I Love
+            <span>
+                You, Gowri ❤️
+            </span>
+        </h2>
+
+        <p>
+            More than yesterday.<br>
+            Less than tomorrow.
+        </p>
+
+        <div class="final-heart">
+            ❤️
+        </div>
+
+    </div>
+
+</section>
 
 </main>
 
 
-<!-- =========================================
-     UI
-========================================= -->
+<!-- =========================================================
+     FLOATING CONTROLS
+========================================================= -->
 
 <div
     class="progress"
-    id="progress"
-></div>
+    id="progress">
+</div>
 
 <button
     class="music-btn"
     id="floatingMusic"
-    aria-label="Toggle music"
->
+    aria-label="Open romantic playlist">
+
     ♫
+
 </button>
 
 
 <script>
 
 /* =========================================================
-   BIRTHDAY CONFIGURATION
+   BIRTHDAY
 ========================================================= */
-
-/*
-   September 28, 2026
-   12:00 AM
-   India / IST (+05:30)
-*/
 
 const BIRTHDAY =
     "2026-09-28T00:00:00+05:30";
@@ -2132,21 +2865,8 @@ const birthdayTime =
 
 
 /* =========================================================
-   PREVIEW MODE
+   PREVIEW
 ========================================================= */
-
-/*
-   NORMAL:
-   yoursite.com
-
-   PREVIEW:
-   yoursite.com/?preview=true
-
-   Preview mode bypasses the birthday lock
-   ONLY for testing.
-
-   It does NOT save preview mode in localStorage.
-*/
 
 const urlParams =
     new URLSearchParams(
@@ -2162,25 +2882,39 @@ const PREVIEW_MODE =
 ========================================================= */
 
 const lockScreen =
-    document.getElementById("lockScreen");
+    document.getElementById(
+        "lockScreen"
+    );
 
 const site =
-    document.getElementById("site");
+    document.getElementById(
+        "site"
+    );
 
 const lockButton =
-    document.getElementById("lockButton");
+    document.getElementById(
+        "lockButton"
+    );
 
 const lockMessage =
-    document.getElementById("lockMessage");
+    document.getElementById(
+        "lockMessage"
+    );
 
 const visitLabel =
-    document.getElementById("visitLabel");
+    document.getElementById(
+        "visitLabel"
+    );
 
 const midnightNote =
-    document.getElementById("midnightNote");
+    document.getElementById(
+        "midnightNote"
+    );
 
 const countdown =
-    document.getElementById("countdown");
+    document.getElementById(
+        "countdown"
+    );
 
 
 /* =========================================================
@@ -2193,13 +2927,6 @@ let visitCount =
             "gowri_visit_count"
         ) || 0
     );
-
-
-/*
-   Preview visits are NOT counted.
-
-   Only normal visits are stored.
-*/
 
 if (!PREVIEW_MODE) {
 
@@ -2237,33 +2964,24 @@ const waitingMessages = [
      But the secret is still locked… 🔒`,
 
     `Almost there, my love… 🌙<br>
-     Midnight is getting closer.`,
+     Midnight is getting closer.`
 
-    `Okay… I know you're excited. 😂❤️<br>
-     One more little wait.`,
-
-    `The clock is moving… ⏰❤️<br>
-     And your surprise is getting closer.`,
-
-    `Gowri… ❤️<br>
-     Tonight is yours. Just wait for the magic. ✨`
 ];
 
 
-/* =========================================================
-   DISPLAY WAITING MESSAGE
-========================================================= */
-
 function showWaitingMessage() {
 
-    const messageIndex =
+    const index =
         Math.min(
-            Math.max(visitCount - 1, 0),
+            Math.max(
+                visitCount - 1,
+                0
+            ),
             waitingMessages.length - 1
         );
 
     lockMessage.innerHTML =
-        waitingMessages[messageIndex];
+        waitingMessages[index];
 
     visitLabel.textContent =
         `Secret visit #${visitCount}`;
@@ -2279,11 +2997,8 @@ function showWaitingMessage() {
 
 let unlocked = false;
 
-function updateCountdown() {
 
-    /*
-       Preview mode doesn't need countdown.
-    */
+function updateCountdown() {
 
     if (PREVIEW_MODE) {
         return;
@@ -2295,10 +3010,6 @@ function updateCountdown() {
     const difference =
         birthdayTime - now;
 
-
-    /*
-       Birthday has arrived.
-    */
 
     if (difference <= 0) {
 
@@ -2316,48 +3027,61 @@ function updateCountdown() {
 
     const hours =
         Math.floor(
-            (difference /
-            (1000 * 60 * 60)) % 24
+            (
+                difference /
+                (1000 * 60 * 60)
+            ) % 24
         );
 
     const minutes =
         Math.floor(
-            (difference /
-            (1000 * 60)) % 60
+            (
+                difference /
+                (1000 * 60)
+            ) % 60
         );
 
     const seconds =
         Math.floor(
-            (difference / 1000) % 60
+            (
+                difference /
+                1000
+            ) % 60
         );
 
 
     document.getElementById("days")
         .textContent =
-        String(days).padStart(2, "0");
+        String(days)
+            .padStart(2,"0");
 
     document.getElementById("hours")
         .textContent =
-        String(hours).padStart(2, "0");
+        String(hours)
+            .padStart(2,"0");
 
     document.getElementById("minutes")
         .textContent =
-        String(minutes).padStart(2, "0");
+        String(minutes)
+            .padStart(2,"0");
 
     document.getElementById("seconds")
         .textContent =
-        String(seconds).padStart(2, "0");
+        String(seconds)
+            .padStart(2,"0");
 }
 
 
 /* =========================================================
-   ENTER MAIN SITE
+   ENTER
 ========================================================= */
 
 function enterBirthdaySite() {
 
     if (
-        site.classList.contains("unlocked")
+        site.classList.contains(
+            "unlocked"
+        )
     ) {
         return;
     }
@@ -2366,7 +3090,8 @@ function enterBirthdaySite() {
     lockScreen.style.transition =
         "opacity 1.2s ease, transform 1.2s ease";
 
-    lockScreen.style.opacity = "0";
+    lockScreen.style.opacity =
+        "0";
 
     lockScreen.style.transform =
         "scale(1.04)";
@@ -2383,20 +3108,22 @@ function enterBirthdaySite() {
 
         window.scrollTo({
             top: 0,
-            behavior: "instant"
+            behavior: "auto"
         });
 
-        startLoveExperience();
+        createHeartExplosion();
 
-    }, 1200);
+    },1200);
 }
 
 
 /* =========================================================
-   UNLOCK BIRTHDAY
+   UNLOCK
 ========================================================= */
 
-function unlockBirthday(autoEnter = false) {
+function unlockBirthday(
+    autoEnter = false
+) {
 
     if (unlocked) {
         return;
@@ -2418,15 +3145,12 @@ function unlockBirthday(autoEnter = false) {
         "Your surprise is finally ready. ✨";
 
 
-    /*
-       Hide countdown after midnight.
-    */
-
     countdown.style.display =
         "none";
 
 
-    lockButton.disabled = false;
+    lockButton.disabled =
+        false;
 
     lockButton.className =
         "unlock-button";
@@ -2434,53 +3158,34 @@ function unlockBirthday(autoEnter = false) {
     lockButton.innerHTML =
         "💖 ENTER YOUR SURPRISE";
 
-
     lockButton.onclick =
         enterBirthdaySite;
 
 
-    /*
-       Preview mode:
-       automatically enter the full website.
-    */
-
     if (autoEnter) {
 
-        setTimeout(() => {
-
-            enterBirthdaySite();
-
-        }, 900);
+        setTimeout(
+            enterBirthdaySite,
+            900
+        );
     }
 }
 
 
 /* =========================================================
-   INITIAL LOCK / PREVIEW LOGIC
+   INITIAL STATE
 ========================================================= */
 
 if (PREVIEW_MODE) {
-
-    /*
-       YOU:
-       ?preview=true
-
-       Immediately see the entire website.
-    */
 
     unlockBirthday(true);
 
 } else {
 
-    /*
-       GOWRI:
-       Normal URL
-
-       Before midnight = locked
-       After midnight = unlocked
-    */
-
-    if (Date.now() >= birthdayTime) {
+    if (
+        Date.now() >=
+        birthdayTime
+    ) {
 
         unlockBirthday(false);
 
@@ -2503,16 +3208,25 @@ if (PREVIEW_MODE) {
 ========================================================= */
 
 const stars =
-    document.getElementById("stars");
+    document.getElementById(
+        "stars"
+    );
+
+const starCount =
+    window.innerWidth <= 700
+        ? 70
+        : 130;
 
 for (
     let i = 0;
-    i < 130;
+    i < starCount;
     i++
 ) {
 
     const star =
-        document.createElement("div");
+        document.createElement(
+            "div"
+        );
 
     star.className =
         "star";
@@ -2526,82 +3240,10 @@ for (
     star.style.animationDelay =
         Math.random() * 4 + "s";
 
-    star.style.opacity =
-        Math.random();
-
-    stars.appendChild(star);
-}
-
-
-/* =========================================================
-   LOVE EXPERIENCE
-========================================================= */
-
-let experienceStarted = false;
-
-function startLoveExperience() {
-
-    if (experienceStarted) {
-        return;
-    }
-
-    experienceStarted = true;
-
-    createHeartExplosion();
-
-    setTimeout(() => {
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-
-    }, 100);
-}
-
-
-/* =========================================================
-   LYRICS
-========================================================= */
-
-const lyrics =
-    document.querySelectorAll(
-        ".lyric"
+    stars.appendChild(
+        star
     );
-
-let lyricIndex = 0;
-
-setInterval(() => {
-
-    /*
-       Don't animate while locked.
-    */
-
-    if (
-        !site.classList.contains(
-            "unlocked"
-        )
-    ) {
-        return;
-    }
-
-    lyrics.forEach(
-        lyric =>
-            lyric.classList.remove(
-                "active"
-            )
-    );
-
-    lyrics[lyricIndex]
-        .classList.add("active");
-
-    lyricIndex =
-        (
-            lyricIndex + 1
-        ) %
-        lyrics.length;
-
-}, 2600);
+}
 
 
 /* =========================================================
@@ -2623,7 +3265,9 @@ const promise =
         "promise"
     );
 
-let giftOpened = false;
+let giftOpened =
+    false;
+
 
 giftBox.addEventListener(
     "click",
@@ -2654,7 +3298,7 @@ giftBox.addEventListener(
 
             createHeartExplosion();
 
-        }, 600);
+        },600);
 
     }
 );
@@ -2665,7 +3309,9 @@ giftBox.addEventListener(
 ========================================================= */
 
 document
-    .getElementById("blowButton")
+    .getElementById(
+        "blowButton"
+    )
     .addEventListener(
         "click",
         () => {
@@ -2703,7 +3349,33 @@ document
                         behavior: "smooth"
                     });
 
-            }, 1500);
+            },1500);
+
+        }
+    );
+
+
+/* =========================================================
+   JIOSAAVN BUTTON
+========================================================= */
+
+const jioURL =
+    "https://www.jiosaavn.com/featured/best-of-romance-telugu/RvsohkkonJJieSJqt9HmOQ__";
+
+
+document
+    .getElementById(
+        "floatingMusic"
+    )
+    .addEventListener(
+        "click",
+        () => {
+
+            window.open(
+                jioURL,
+                "_blank",
+                "noopener,noreferrer"
+            );
 
         }
     );
@@ -2726,12 +3398,14 @@ window.addEventListener(
             window.innerHeight;
 
 
-        if (documentHeight <= 0) {
+        if (
+            documentHeight <= 0
+        ) {
             return;
         }
 
 
-        const percent =
+        const percentage =
             (
                 scrollTop /
                 documentHeight
@@ -2743,10 +3417,12 @@ window.addEventListener(
                 "progress"
             )
             .style.width =
-            percent + "%";
+            percentage + "%";
 
     },
-    { passive: true }
+    {
+        passive: true
+    }
 );
 
 
@@ -2767,9 +3443,15 @@ function createHeartExplosion() {
     ];
 
 
+    const count =
+        window.innerWidth <= 700
+            ? 18
+            : 28;
+
+
     for (
         let i = 0;
-        i < 28;
+        i < count;
         i++
     ) {
 
@@ -2808,9 +3490,13 @@ function createHeartExplosion() {
             "--x",
             (
                 (
-                    Math.random() -
-                    .5
-                ) * 400
+                    Math.random() - .5
+                ) *
+                (
+                    window.innerWidth <= 700
+                        ? 240
+                        : 400
+                )
             ) + "px"
         );
 
@@ -2826,311 +3512,22 @@ function createHeartExplosion() {
         );
 
 
-        setTimeout(() => {
-
-            heart.remove();
-
-        }, 4500);
-
-    }
-}
-
-
-/* =========================================================
-   ROMANTIC WEB AUDIO
-========================================================= */
-
-let audioContext = null;
-
-let melodyTimer = null;
-
-let musicPlaying = false;
-
-const melodyNotes = [
-
-    261.63,
-    329.63,
-    392.00,
-    329.63,
-
-    293.66,
-    349.23,
-    440.00,
-    392.00
-
-];
-
-
-function playNote(
-    freq,
-    duration = .8
-) {
-
-    if (!audioContext) {
-        return;
-    }
-
-
-    const oscillator =
-        audioContext
-            .createOscillator();
-
-
-    const gain =
-        audioContext
-            .createGain();
-
-
-    oscillator.type =
-        "sine";
-
-
-    oscillator.frequency.value =
-        freq;
-
-
-    gain.gain.setValueAtTime(
-        0,
-        audioContext.currentTime
-    );
-
-
-    gain.gain.linearRampToValueAtTime(
-        .055,
-        audioContext.currentTime + .08
-    );
-
-
-    gain.gain.exponentialRampToValueAtTime(
-        .001,
-        audioContext.currentTime +
-        duration
-    );
-
-
-    oscillator.connect(gain);
-
-    gain.connect(
-        audioContext.destination
-    );
-
-
-    oscillator.start();
-
-
-    oscillator.stop(
-        audioContext.currentTime +
-        duration
-    );
-}
-
-
-/* =========================================================
-   START MUSIC
-========================================================= */
-
-async function startMusic() {
-
-    if (musicPlaying) {
-        return;
-    }
-
-
-    try {
-
-        audioContext =
-            new (
-                window.AudioContext ||
-                window.webkitAudioContext
-            )();
-
-
-        if (
-            audioContext.state ===
-            "suspended"
-        ) {
-
-            await audioContext.resume();
-
-        }
-
-
-        musicPlaying = true;
-
-
-        let i = 0;
-
-
-        /*
-           Play first note immediately.
-        */
-
-        playNote(
-            melodyNotes[i],
-            .8
+        setTimeout(
+            () => heart.remove(),
+            4500
         );
 
-
-        i =
-            (
-                i + 1
-            ) %
-            melodyNotes.length;
-
-
-        melodyTimer =
-            setInterval(
-                () => {
-
-                    playNote(
-                        melodyNotes[i],
-                        .8
-                    );
-
-                    i =
-                        (
-                            i + 1
-                        ) %
-                        melodyNotes.length;
-
-                },
-                900
-            );
-
-
-        document
-            .getElementById(
-                "musicControl"
-            )
-            .textContent =
-            "♫ My Little Song Is Playing";
-
-
-        document
-            .getElementById(
-                "floatingMusic"
-            )
-            .textContent =
-            "♫";
-
-    } catch (error) {
-
-        console.error(
-            "Music could not start:",
-            error
-        );
-
-        musicPlaying = false;
     }
 }
 
 
 /* =========================================================
-   STOP MUSIC
-========================================================= */
-
-function stopMusic() {
-
-    if (!musicPlaying) {
-        return;
-    }
-
-
-    clearInterval(
-        melodyTimer
-    );
-
-
-    melodyTimer = null;
-
-    musicPlaying = false;
-
-
-    if (audioContext) {
-
-        audioContext.close();
-
-        audioContext = null;
-    }
-
-
-    document
-        .getElementById(
-            "musicControl"
-        )
-        .textContent =
-        "♫ Play My Little Song";
-
-
-    document
-        .getElementById(
-            "floatingMusic"
-        )
-        .textContent =
-        "♫";
-}
-
-
-/* =========================================================
-   MUSIC BUTTONS
-========================================================= */
-
-document
-    .getElementById(
-        "musicControl"
-    )
-    .addEventListener(
-        "click",
-        () => {
-
-            if (musicPlaying) {
-
-                stopMusic();
-
-            } else {
-
-                startMusic();
-
-            }
-
-        }
-    );
-
-
-document
-    .getElementById(
-        "floatingMusic"
-    )
-    .addEventListener(
-        "click",
-        () => {
-
-            if (musicPlaying) {
-
-                stopMusic();
-
-            } else {
-
-                startMusic();
-
-            }
-
-        }
-    );
-
-
-/* =========================================================
-   PAGE VISIBILITY
+   VISIBILITY CHECK
 ========================================================= */
 
 document.addEventListener(
     "visibilitychange",
     () => {
-
-        /*
-           If the tab was left open until midnight,
-           check immediately when she returns.
-        */
 
         if (
             !document.hidden &&
@@ -3140,26 +3537,6 @@ document.addEventListener(
         ) {
 
             unlockBirthday(false);
-
-        }
-
-    }
-);
-
-
-/* =========================================================
-   CLEANUP
-========================================================= */
-
-window.addEventListener(
-    "beforeunload",
-    () => {
-
-        if (melodyTimer) {
-
-            clearInterval(
-                melodyTimer
-            );
 
         }
 
